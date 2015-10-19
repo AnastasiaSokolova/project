@@ -1,0 +1,102 @@
+.wrapper {
+  width: 100%;
+}
+.wrapper header {
+  height: 59px;
+}
+.wrapper .logo {
+  background-color: rgb(57, 194, 215);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: inherit;
+}
+.wrapper .logo span {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 138px;
+  top: 12px;
+}
+.wrapper .logo img {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+.wrapper .divider {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+  position: absolute;
+  left: 118px;
+  top: 9px;
+  width: 1px;
+  height: 32px;
+}
+
+/*================*/
+.wrapper .l1 {
+  list-style-type: none;
+  color: rgb(26, 156, 176);
+  position: absolute;
+  left: 75px;/*39px;*/
+  top: 80px;
+  width: 70%;
+}
+.wrapper .l1 li a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(26, 156, 176);
+}
+.wrapper .l1 li a:hover {
+  text-decoration: none;
+  color: rgb(160, 160, 160);
+}
+
+/*=================*/
+.wrapper .l2 {
+  list-style-type: none;
+  color: rgb(26, 156, 176);
+  position: absolute;
+  left: 75px;/*39px;*/
+  top: 160px;
+  width: 70%;
+
+}
+.l2 li {
+  counter-increment: step-counter;
+}
+.l2 li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  text-decoration: underline;
+  width: 20px;
+}
+
+/*====================================*/
+
+
+.paint {
+  color: red;
+  text-decoration: none;
+}
+
+ol {
+    counter-reset: li;
+    list-style: none;
+    padding: 0px;
+}
+
+ol a:before {
+    content: counter(li, decimal-leading-zero)'. ';
+    counter-increment: li;
+}
+
+ol a{
+    color: lightblue;
+    font-size: 18px;
+}
+
+ol a:hover {
+    text-decoration: none;
+    color: grey;
+}
