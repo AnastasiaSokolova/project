@@ -1,0 +1,38 @@
+.wrapper .mainheader {
+  height: 58px;
+}
+.wrapper .logo {
+  background-color: rgb(57, 194, 215);
+  height: inherit;
+}
+.wrapper .logo img {
+  margin: 10px 15px;
+  float: left;
+  padding-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, .5);
+}
+.wrapper .logo span {
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+}
+.wrapper .lectures {
+  counter-reset: li;
+  list-style: none;
+  color: rgb(26, 156, 176);
+  padding: 25px 44px;
+}
+.wrapper .lectures a:before {
+  content: counter(li, decimal-leading-zero)'. ';
+  counter-increment: li;
+}
+.wrapper .lectures li a {
+  cursor: pointer;
+  color: rgb(26, 156, 176);
+}
+.wrapper .lectures li a:visited {
+  color: rgb(160, 160, 160);
+}
+.wrapper .lectures li a:hover {
+  text-decoration: none;
+  color: rgb(160, 160, 160);
+}
