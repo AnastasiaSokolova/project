@@ -1,0 +1,124 @@
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 14px;
+}
+
+.wrapper .mainheader {
+  height: 58px;
+}
+.wrapper .logo {
+  background-color: rgb(255, 255, 255);
+  height: inherit;
+  margin-left: 20px;
+}
+.wrapper .divider {
+  border-right: 1px solid rgba(57, 194, 215, .5);
+  padding: 0 15px;
+  height: 32px;
+  float: left;
+  margin-top: 13px;
+}
+.wrapper .logo span {
+  padding-left: 15px;
+  color:  rgb(57, 194, 215);
+  line-height: 58px;
+}
+
+.wrapper .imgbloc {
+  height: 500px;
+  background: url(fonts/main.jpg) no-repeat;
+  position: relative;
+  text-align: center;
+}
+.wrapper .inner {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+.wrapper .content {
+  border-bottom: 1px solid rgb(211, 211, 211);
+  line-height: 1.8;
+  height: 450px;
+  padding: 50px 150px;
+}
+/*.wrapper .centerbloc {
+  width: 1000px;
+  margin: 0px auto;
+}*/
+.wrapper .imgbloc h2 {
+  font-size: 24px;
+}
+.wrapper .imgbloc button {
+  background-color: #74b824;
+  padding: 15px 60px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.wrapper .content article {
+  margin-bottom: 30px;
+}
+.wrapper .content section {
+  width: 60%;
+  float: left;
+}
+.wrapper .content aside {
+  width: 40%;
+  float: left;
+}
+.wrapper .list {
+  margin: 10px -15px;
+  list-style: none;
+  overflow: hidden;
+  counter-reset: numList;
+}
+.wrapper .list li {
+  line-height: 1.5;
+}
+
+.wrapper .list li:before {
+  counter-increment: numList;
+  content: counter(numList);
+  float: left;
+  margin-right: 5px;
+  font: bold 12px sans-serif;
+  text-align: center;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  background: rgb(57, 194, 215);
+  -moz-border-radius: 999px;
+  border-radius: 999px
+}
+.wrapper .requirements ul {
+  list-style: none;
+  padding: 10px;
+}
+.wrapper aside span {
+  font-size: 14px;
+}
+.wrapper aside p {
+  padding: 10px;
+}
+
+.wrapper footer {
+  clear: both;
+  padding: 20px 0;
+  width: 90%;
+  margin: auto;
+}
+:root {
+--fontSize: 1rem;
+--mainColor: #12345678;
+--highlightColor: hwb(190, 35%, 20%);
+}
+
+
+.proba {
+  height: 100px;
+  background: color: var(--mainColor);;
+}

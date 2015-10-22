@@ -1,0 +1,16 @@
+.maintext {
+	 font: bold 18px/1.6 "source_sans_prolight";
+}
+
+.logotext {
+	font:  20px/1.5 "source_sans_proregular";
+	text-transform: uppercase;
+}
+
+.headtext {
+  background-color: rgb(57, 194, 215);
+  text-transform: uppercase;
+  color: white;
+  padding: 5px 10px;
+  margin: 20px 0;
+}
